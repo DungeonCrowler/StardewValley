@@ -7,6 +7,11 @@ html {
 body {
     width: 100%;
     background-color: #f9e186;
+    font-family: Stardew_Valley, sans-serif;
+}
+
+a {
+    text-decoration: inherit;
 }
 
 .flex-row-top {
@@ -38,6 +43,14 @@ body {
     column-gap: 104px;
 }
 
+/* fonts */
+
+@font-face {
+    font-family: Stardew_Valley;
+    src: url(fonts/Stardew_Valley.otf);
+}
+
+
 /* top menu */
 #top-nav ul {
     padding: 0;
@@ -45,8 +58,49 @@ body {
 
 #top-nav li {
     list-style-type: none;
-    margin-right: 24px;
+    margin-right: 60px;
+    margin-left: 60px;
     border-bottom: 2px solid white;
     padding-bottom: 4px;
     display: inline;
+}
+
+#top-nav a {
+    text-decoration: none;
+    color: #FDF9E7;
+    font-size: 32pt;
+}
+
+#top-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #17093E;
+}
+
+#SDVLogo {
+    margin-left: 40px;
+}
+
+#topsocials {
+    margin-right: 40px;
+}
+
+/* hero section */
+
+.HeroSec {
+    position: relative;
+    display: inline-block;
+}
+
+.HeroSec img {
+    display: block;
+}
+
+
+.mainlogolink {
+    position: absolute;
+    scale: 120%;
+    top: 20%;
+    left: 30%;
 }
